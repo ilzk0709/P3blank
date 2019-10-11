@@ -26,6 +26,7 @@ float balaVx;   // Velocidad X de la bala, en píxeles por segundo
 float balaVy;   // Velocidad Y de la bala, en píxeles por segundo
 
 float gravedad = 278;
+int score = 0;
 /////////////////////////////////////////
 
 void setup() {
@@ -37,6 +38,8 @@ void setup() {
 
 void draw() {
   background(255);
+  textSize(32);
+  text("Score: " + score, 10, 30);
 
   //Pintar pared
   fill(0);
